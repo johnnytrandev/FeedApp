@@ -1,29 +1,29 @@
 import React, { Component } from 'react';
 import { AppRegistry,StyleSheet,View } from 'react-native';
 import App from './App';
-import Main from './app/components/Main';
-import MainJS from './main'
+// import Main from './app/components/Main';
+import {Main} from './main'
 import SplashPage from './app/pages/SplashPage'
 import WFMain from './app/components/WFMain'
 
 
-export default class loginAnimation extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Main />
-      </View>
-    );
-  }
-}
-
-// export default class NewsDemo extends Component {
+// export default class loginAnimation extends React.Component {
 //   render() {
 //     return (
-//         <WFMain/>
+//       <View style={styles.container}>
+//         <Main />
+//       </View>
 //     );
 //   }
 // }
+
+export default class NewsDemo extends React.Component {
+  render() {
+    return (
+        <Main/>
+    );
+  }
+}
 
 
 const styles = StyleSheet.create({
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Feed', () => MainJS);
+AppRegistry.registerComponent('Feed', () => NewsDemo);
